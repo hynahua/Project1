@@ -1,0 +1,181 @@
+.resume-section {
+  padding-top: 181px;
+  padding-bottom: 120px;
+  background-color: #f8fbff;
+  .resume-container {
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 12px;
+    margin-right: auto;
+    margin-left: auto;
+    .resume-heading {
+      text-align: center;
+      padding-bottom: 55px;
+      h3 {
+        margin: 0;
+        font-weight: 700;
+        color: #323258;
+        font-size: 50px;
+      }
+    }
+    .resume-content {
+      display: flex;
+      margin-top: -33px;
+      .content-left {
+        padding: 0 12px;
+        width: 50%;
+        margin-top: 24px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            margin-bottom: 35px;
+            padding-right: 50px;
+            padding-left: 50px;
+            .skill-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .skill-icon {
+                width: 120px;
+                height: 120px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #eee;
+                border-radius: 50%;
+                flex-direction: column;
+                i {
+                  font-size: 70px;
+                }
+                img {
+                  height: 70px;
+                  width: 70px;
+                }
+                .js {
+                  height: 60px;
+                  width: 60px;
+                }
+              }
+              .skill-name {
+                font-size: 16px;
+                margin: 0;
+                text-align: center;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                padding: 15px 0 0;
+                font-weight: 500;
+                line-height: 1.2;
+              }
+            }
+          }
+        }
+      }
+      .content-right {
+        width: 50%;
+        margin-top: 45px;
+        padding-left: 13px;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            display: flex;
+            margin-bottom: 83px;
+            h6 {
+              flex: 0 0 100px;
+              max-width: 100px;
+              margin: 0;
+              color: #1877f2;
+              font-weight: 600;
+              font-size: 20px;
+            }
+            .text {
+              h5 {
+                font-weight: 700;
+                color: #323258;
+                font-size: 24px;
+                line-height: 1;
+                margin: 0 0 4px;
+              }
+              span {
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 300;
+              }
+            }
+            label {
+              font-size: 16px;
+              margin-left: auto;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-section {
+    padding-top: 124px;
+    padding-bottom: 55px;
+    .resume-container {
+      .resume-heading {
+        padding-bottom: 45px;
+        h3 {
+          font-size: 35px;
+          line-height: 1.2;
+        }
+      }
+      .resume-content {
+        flex-direction: column;
+        .content-left {
+          column-count: 2;
+          width: 100%;
+          ul {
+            justify-content: space-around;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              padding-right: 0px;
+              padding-left: 0px;
+            }
+          }
+        }
+        .content-right {
+          flex-shrink: 0;
+          width: 100%;
+          max-width: 100%;
+          margin-top: 24px;
+          padding-left: 0;
+          ul {
+            li {
+              margin-bottom: 40px;
+              h6 {
+                flex: 0 0 55px;
+                max-width: 55px;
+                font-size: 16px;
+              }
+              .text {
+                h5 {
+                  font-size: 16px;
+                }
+                span {
+                  font-size: 14px;
+                }
+              }
+              label {
+                white-space: nowrap;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

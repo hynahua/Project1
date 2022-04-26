@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable = no"
+    />
+    <title>Wilson - Portfolio Template</title>
+    <link rel="shortcut icon" type="image/icon" href="./assets/icon.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="./assets/fontawesome-free-6.1.1-web/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+    />
+    <link href="../Project1/style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- page loading -->
+    <div id="loading" class="loading">
+      <div class="load-circle">
+        <span class="one"></span>
+      </div>
+    </div>
+    <!-- End -->
+    <header>
+      <div class="sticky-wrapper">
+        <nav class="navbar">
+          <div class="nav-container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/logo.svg" alt="logo" />
+            </a>
+            <!-- Main Menu -->
+            <div class="nav-collapse" id="navbar-collapse-toggle">
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="0" href="#home"
+                    ><span>Home</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="1" href="#about"
+                    ><span>About</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="2" href="#resume"
+                    ><span>Resume</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="3" href="#work"
+                    ><span>Work</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="4" href="#contact"
+                    ><span>Contact</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Mobile Toggle -->
+            <button class="hire-me">
+              <a href="#contact" data-scroll-nav="4" class="px-btn">HIRE ME </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="mobile-menu-bar">
+        <div class="mobile-menu-hamburger">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.svg" alt="logo" />
+          </a>
+          <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <div class="mobile-menu-list">
+          <nav class="navbar">
+            <!-- Main Menu -->
+            <div class="nav-collapse" id="navbar-collapse-toggle">
+              <ul class="nav-menu">
+                <li class="nav-item nav-close">
+                  <a class="nav-link" data-scroll-nav="0" href="#home"
+                    ><span>Home</span></a
+                  >
+                </li>
+                <li class="nav-item nav-close">
+                  <a class="nav-link" data-scroll-nav="1" href="#about"
+                    ><span>About</span></a
+                  >
+                </li>
+                <li class="nav-item nav-close">
+                  <a class="nav-link" data-scroll-nav="2" href="#resume"
+                    ><span>Resume</span></a
+                  >
+                </li>
+                <li class="nav-item nav-close">
+                  <a class="nav-link" data-scroll-nav="3" href="#work"
+                    ><span>Work</span></a
+                  >
+                </li>
+                <li class="nav-item nav-close">
+                  <a class="nav-link" data-scroll-nav="4" href="#contact"
+                    ><span>Contact</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="wrapper">
+      <!-- Home Section -->
+      <section
+        id="home"
+        data-scroll-index="0"
+        class="home-section"
+        style="background-image: url(assets/bg.jpeg)"
+      >
+        <div class="home-container">
+          <div class="home-intro-box">
+            <div class="user-text">
+              <h6>
+                <img src="assets/hand.png" alt="wave hand" />
+                Hello, I am
+              </h6>
+              <h1>Wilson</h1>
+              <h2>Freelance <span class="auto-type"></span></h2>
+            </div>
+            <div class="user-review">
+              <div class="star-box">
+                <ul>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <p>"Wilson is absolutely brilliant Developer!"</p>
+              <h6>pxdraft</h6>
+            </div>
+            <div class="user-img">
+              <div class="user-img-round"></div>
+              <img src="assets/user-image.png" alt="Portfolio" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" data-scroll-index="1" class="about-section">
+        <div class="about-container">
+          <div class="about-heading">
+            <h3>About Me</h3>
+          </div>
+          <div class="about-content">
+            <div class="about-img">
+              <img src="assets/user-image.png" title="" alt="portrait" />
+            </div>
+            <div class="about-intro">
+              <h6>MY INTRO</h6>
+              <h2>I am <span>Wilson Z.</span></h2>
+              <h5>A lead Full Stack Developer based in China</h5>
+              <div class="intro-main">
+                <p>
+                  A passionate Full Stack Developer who has experience in
+                  decreasing development time by writing clean, stable, and
+                  scalable code for the business. I am also an active learner
+                  who always likes to learn and share my knowledge with others.
+                </p>
+                <p>
+                  Most importantly I am very good at collaborating and
+                  communicating with others, especially in Agile/Scrum teams.
+                </p>
+              </div>
+              <div class="intro-list">
+                <div class="list-left">
+                  <ul>
+                    <li>
+                      <span>Phone :</span> <label>(+61) 0422154879</label>
+                    </li>
+                    <li>
+                      <span>Email :</span>
+                      <label>wilsonzhang91@gmail.com</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-right">
+                  <ul>
+                    <li><span>Location :</span> <label>Sydney</label></li>
+                    <li>
+                      <span>Linkedin:</span>
+                      <a
+                        href="https://www.linkedin.com/in/wilson-zhang-syd/"
+                        target="_blank"
+                        >wilson-zhang</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="download-cv">
+                <a href="#" class="px-btn px-btn-primary">DOWNLOAD CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Resume Section -->
+      <section id="resume" data-scroll-index="2" class="resume-section">
+        <div class="resume-container">
+          <div class="resume-heading">
+            <h3>Skills & Experience</h3>
+          </div>
+          <div class="resume-content">
+            <div class="content-left">
+              <ul class="skills-list counter">
+                <li>
+                  <div class="skill-box">
+                    <div class="skill-icon" style="background: #ffe5dc">
+                      <i class="ri-html5-fill" style="color: #e54c21"></i>
+                    </div>
+                    <h6 class="skill-name">HTML</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-box">
+                    <div class="skill-icon" style="background: #def5ff">
+                      <i
+                        class="fa-brands fa-css3-alt"
+                        style="color: #264de4; font-size: 70px"
+                      ></i>
+                    </div>
+                    <h6 class="skill-name">CSS</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-box">
+                    <div class="skill-icon" style="background: #f8e3d5">
+                      <i
+                        class="fa-brands fa-git-alt"
+                        style="color: #e98a0e; font-size: 70px"
+                      ></i>
+                    </div>
+                    <h6 class="skill-name">Git</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-box">
+                    <div class="skill-icon" style="background: #def5ff">
+                      <img
+                        src="assets/reactjs.svg"
+                        alt="reactjs icon"
+                        style="color: #21759b"
+                      />
+                    </div>
+                    <h6 class="skill-name">React.js</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-box">
+                    <div class="skill-icon" style="background: #f8f1b7">
+                      <img
+                        class="js"
+                        src="assets/js.png"
+                        alt="javascript icon"
+                      />
+                    </div>
+                    <h6 class="skill-name">Javascript</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-box">
+                    <div class="skill-icon" style="background: #f0ffd0">
+                      <i
+                        class="fa-brands fa-node-js"
+                        style="color: #80bd00; font-size: 70px"
+                      ></i>
+                    </div>
+                    <h6 class="skill-name">Node.js</h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-right">
+              <ul>
+                <li>
+                  <h6>2022</h6>
+                  <div class="text">
+                    <h5>Full-stack developer intership</h5>
+                    <span>JR Academy</span>
+                  </div>
+                  <label>Continue</label>
+                </li>
+                <li>
+                  <h6>2021</h6>
+                  <div class="text">
+                    <h5>Full Stack Developer Course</h5>
+                    <span>JR Academy</span>
+                  </div>
+                  <label>4 months</label>
+                </li>
+                <li>
+                  <h6>2021</h6>
+                  <div class="text">
+                    <h5>Python & Web course for beginners</h5>
+                    <span>JR Academy</span>
+                  </div>
+                  <label>2 months</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work Section -->
+      <section id="work" data-scroll-index="3" class="work-section">
+        <div class="work-container">
+          <div class="work-heading">
+            <h3>My Latest Projects</h3>
+          </div>
+          <div class="work-content">
+            <div class="work-projects">
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <div class="work-img">
+                        <img src="./assets/work-1.png" title="" alt="" />
+                      </div>
+                      <h6>UI/UX DESIGN</h6>
+                      <h3>Skilly UI/UX Design</h3>
+                    </li>
+                    <li class="glide__slide">
+                      <div class="work-img">
+                        <img src="./assets/work-2.png" title="" alt="" />
+                      </div>
+                      <h6>UI/UX DESIGN</h6>
+                      <h3>Skilly UI/UX Design</h3>
+                    </li>
+                    <li class="glide__slide">
+                      <div class="work-img">
+                        <img src="./assets/work-3.png" title="" alt="" />
+                      </div>
+                      <h6>UI/UX DESIGN</h6>
+                      <h3>Skilly UI/UX Design</h3>
+                    </li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button
+                    class="glide__arrow glide__arrow--left"
+                    data-glide-dir="<"
+                  >
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </button>
+                  <button
+                    class="glide__arrow glide__arrow--right"
+                    data-glide-dir=">"
+                  >
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content-mobile">
+            <div class="work-projects">
+              <div class="project-container">
+                <ul class="project-content">
+                  <li class="projects">
+                    <div class="work-img">
+                      <img src="./assets/work-1.png" title="" alt="" />
+                    </div>
+                    <h6>UI/UX DESIGN</h6>
+                    <h3>Skilly UI/UX Design</h3>
+                  </li>
+                  <li class="projects">
+                    <div class="work-img">
+                      <img src="./assets/work-2.png" title="" alt="" />
+                    </div>
+                    <h6>UI/UX DESIGN</h6>
+                    <h3>Skilly UI/UX Design</h3>
+                  </li>
+                  <li class="projects">
+                    <div class="work-img">
+                      <img src="./assets/work-3.png" title="" alt="" />
+                    </div>
+                    <h6>UI/UX DESIGN</h6>
+                    <h3>Skilly UI/UX Design</h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact Section -->
+      <section id="contact" data-scroll-index="4" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-heading">
+            <h3>Take a Coffee & chat with me</h3>
+          </div>
+          <div class="contact-box">
+            <div class="contact-content">
+              <div class="contact-info">
+                <div class="info-left">
+                  <a class="email" href="#">
+                    <img src="./assets/email.png" alt="email icon" />
+                    <span>wilsonzhang91@gmail.com</span>
+                  </a>
+                </div>
+                <div class="info-right">
+                  <a class="phone" href="#">
+                    <img src="./assets/phone.png" alt="phone icon" />
+                    <span>+61 422 154 879</span>
+                  </a>
+                </div>
+              </div>
+              <div class="form-container">
+                <form>
+                  <div class="row">
+                    <div class="form-firstLine">
+                      <div class="input-field">
+                        <input
+                          type="text"
+                          class="form-name"
+                          id="you_name"
+                          placeholder="Your Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-firstLine">
+                      <div class="input-field">
+                        <input
+                          type="text"
+                          class="form-name"
+                          id="your_email"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-secondLine">
+                      <div class="input-field">
+                        <input
+                          type="text"
+                          class="form-subject"
+                          id="your_subject"
+                          placeholder="Subject"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-secondLine">
+                      <div class="input-field">
+                        <textarea
+                          class="form-message"
+                          id="your_message"
+                          type="text"
+                          placeholder="Your Message here"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="send-btn">
+                      <button>
+                        <a href="mailto:wilsonzhang91@gmail.com">
+                          SEND INQUIRY
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="left-info">
+              <img src="./assets/logo.svg" alt="logo" />
+              <span class="ps-3">© Copyright 2022 | All rights reserved</span>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="icons">
+              <a class="facebook" href="#"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a class="twitter" href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a class="instagram" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <a
+      href="#"
+      id="scrollToTop"
+      class="scrollToTop"
+      onclick="scrollTopAnimated()"
+    >
+      <img src="./assets/arrow.svg" title="" alt="arrow" />
+    </a>
+    <script src="/Project1/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script>
+      new Glide(".glide", {
+        type: "carousel",
+        focusAt: "center",
+        startAt: 0,
+        perView: 3,
+      }).mount();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Developer", "Designer", "Engineer"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script type="text/javascript">
+      function scrollTopAnimated() {
+        $("html, body").animate({ scrollTop: "0" });
+      }
+    </script>
+  </body>
+</html>

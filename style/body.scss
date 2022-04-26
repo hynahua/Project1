@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.disappear {
+  animation: fadeout 1s forwards;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: inherit;
+  body {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #687898;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    overflow: scroll;
+    overflow-x: hidden;
+    .loading {
+      // display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #1877f2;
+      z-index: 99999;
+      .load-circle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        .one {
+          display: inline-block;
+          width: 64px;
+          height: 64px;
+
+          &:after {
+            content: " ";
+            display: block;
+            width: 46px;
+            height: 46px;
+            margin: 1px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+          }
+        }
+      }
+    }
+    main {
+      box-sizing: border-box;
+    }
+  }
+  .scrollToTop {
+    width: 42px;
+    height: 42px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1877f2;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    z-index: 11;
+    transition: 0.5s;
+
+    &:hover {
+      background: #323258;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .totop {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    .scrollToTop {
+      right: 15px;
+    }
+  }
+}
