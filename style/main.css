@@ -582,10 +582,11 @@ html .totop {
 .about-section .about-container .about-content .about-intro .intro-list .list-left ul li span {
   font-weight: 400;
 }
-.about-section .about-container .about-content .about-intro .intro-list .list-left ul li label {
+.about-section .about-container .about-content .about-intro .intro-list .list-left ul li a {
   margin: 0;
   font-weight: 600;
   color: #323258;
+  text-decoration: none;
 }
 .about-section .about-container .about-content .about-intro .intro-list .list-right {
   padding-left: 12px;
@@ -1001,7 +1002,8 @@ html .totop {
     color: #323258;
     font-weight: 700;
     text-decoration: none;
-    line-height: 4rem;
+    margin: 1rem 0;
+    display: inline-block;
   }
   .work-section .work-container .work-content-mobile .work-projects .project-container .project-content .projects h6 {
     font-size: 13px;
@@ -1156,6 +1158,9 @@ html .totop {
   background-color: #fff;
   background-clip: padding-box;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contact-section .contact-container .contact-box .contact-content .form-container form .row .form-secondLine .input-field .form-subject:hover .contact-section .contact-container .contact-box .contact-content .form-container form .row .form-secondLine .input-field .form-subject:focus-visible {
+  border: none;
 }
 .contact-section .contact-container .contact-box .contact-content .form-container form .row .form-secondLine .input-field {
   position: relative;
