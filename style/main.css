@@ -1291,6 +1291,7 @@ html .totop {
 .footer .footer-container .footer-content .footer-right .icons {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 }
 .footer .footer-container .footer-content .footer-right .icons a {
   width: 36px;
@@ -1331,6 +1332,12 @@ html .totop {
   }
   .footer .footer-container .footer-content .footer-left {
     width: 100%;
+  }
+  .footer .footer-container .footer-content .footer-right {
+    width: 100%;
+  }
+  .footer .footer-container .footer-content .footer-right .icons {
+    justify-content: center;
   }
 }
 

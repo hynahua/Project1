@@ -32,6 +32,7 @@
         .icons {
           display: flex;
           justify-content: flex-end;
+          gap: 1rem;
           a {
             width: 36px;
             height: 36px;
@@ -73,6 +74,12 @@
         justify-content: center;
         .footer-left {
           width: 100%;
+        }
+        .footer-right {
+          width: 100%;
+          .icons {
+            justify-content: center;
+          }
         }
       }
     }
